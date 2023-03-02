@@ -1,13 +1,11 @@
 import React from 'react';
 import Meta from '../components/Meta';
 
-const Admin = () => {
-	return (
-		<div>
-			<Meta title='Admin' />
-			<div>Admin</div>
-		</div>
-	);
-};
+const Admin = () => (
+	<div>
+		<Meta title='Admin Quản Trị' />
+		<div>Admin</div>
+	</div>
+);
 
 export default Admin;

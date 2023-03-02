@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Pagenotfound from './Pagenotfound';
 import Admin from '../admin/Admin';
 import AdminLayout from '../layout/Admin-Layout';
 import UserLayout from '../layout/User-Layout';
@@ -18,6 +19,7 @@ function App() {
 				<Route path='/admin' element={<AdminLayout />}>
 					<Route index element={<Admin />} />
 				</Route>
+				<Route path='*' element={<Pagenotfound />} />
 			</Routes>
 		</BrowserRouter>
 	);
