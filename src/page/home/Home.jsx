@@ -1,6 +1,6 @@
 import React from 'react';
-import Meta from '../components/Meta';
-import banner from '../images/slider_1.jpg';
+import Meta from '../../components/Meta';
+import banner from '../../images/slider_1.jpg';
 import './Home.scss';
 
 const Home = () => {
