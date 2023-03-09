@@ -7,7 +7,7 @@ import img1 from '../../images/mega-1-image.webp';
 
 const Header = () => {
 	return (
-		<header className='header container-fluid mx-0'>
+		<header className='header'>
 			<div className='container-lg'>
 				<div className='d-flex align-items-center justify-content-between evo-header-padding'>
 					{/* Menu icon */}
@@ -114,7 +114,7 @@ const Header = () => {
 									Sản phẩm <i className='fa-solid fa-chevron-down w-auto ms-1 pt-1'></i>
 								</span>
 							</Link>
-							<div className='mega-menu'>
+							<div className='mega-menu container-fluid'>
 								<div className='container-lg'>
 									<div className='d-flex'>
 										<div className='col-lg-9'>
