@@ -8,7 +8,6 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				{publicRoutes.map((route, index) => {
-					// const Layout = route.layout === null ? Fragment : DefaultLayout;
 					const Page = route.component;
 					let Layout = DefaultLayout;
 					if (route.layout) {

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Footer.scss';
-import logo from '../../images/logo.webp';
-import payment1 from '../../images/payment_1.svg';
-import payment2 from '../../images/payment_2.svg';
-import payment3 from '../../images/payment_3.svg';
-import payment4 from '../../images/payment_4.svg';
-import payment5 from '../../images/payment_5.svg';
-import payment6 from '../../images/payment_6.svg';
+import logo from '../../../images/logo.webp';
+import payment1 from '../../../images/payment_1.svg';
+import payment2 from '../../../images/payment_2.svg';
+import payment3 from '../../../images/payment_3.svg';
+import payment4 from '../../../images/payment_4.svg';
+import payment5 from '../../../images/payment_5.svg';
+import payment6 from '../../../images/payment_6.svg';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {

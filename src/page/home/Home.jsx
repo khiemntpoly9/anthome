@@ -5,7 +5,7 @@ import './Home.scss';
 
 const Home = () => {
 	return (
-		<div>
+		<div className='container-flui mx-0'>
 			<Meta title='Ant Home' />
 			<div className='banner-home'>
 				<img className='img-fluid' src={banner} alt='' />

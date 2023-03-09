@@ -7,9 +7,9 @@ import Header from './header/Header';
 // eslint-disable-next-line react/prop-types
 const DefaultLayout = ({ children }) => {
 	return (
-		<div>
+		<div className='container-fluid p-0 m-0'>
 			<Header />
-			<div>
+			<div className='container-fluid p-0 m-0'>
 				{/* <Outlet /> */}
 				{children}
 			</div>

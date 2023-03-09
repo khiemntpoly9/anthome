@@ -1,7 +1,10 @@
+// Layout
+import AdminLayout from '../layout/AdminLayout';
+
+// Page
 import Home from '../page/home/Home';
 import Admin from '../admin/Admin';
 import Pagenotfound from '../page/Pagenotfound';
-import AdminLayout from '../layout/AdminLayout';
 
 // Public Router
 const publicRoutes = [
