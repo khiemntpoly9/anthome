@@ -1,13 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from './header/Header';
-// import { Outlet } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
-const DefaultLayout = ({ children }) => {
+const DefaultLayout = () => {
 	return (
 		<div className='container-fluid p-0'>
 			<Header />
-			<div>{children}</div>
+			<div>
+				<Outlet />
+			</div>
 		</div>
 	);
 };

@@ -5,13 +5,12 @@ import Footer from './footer/Footer';
 import Header from './header/Header';
 
 // eslint-disable-next-line react/prop-types
-const DefaultLayout = ({ children }) => {
+const DefaultLayout = () => {
 	return (
 		<div className='container-fluid p-0 m-0'>
 			<Header />
 			<div className='container-fluid p-0 m-0'>
-				{/* <Outlet /> */}
-				{children}
+				<Outlet />
 			</div>
 			<Footer />
 		</div>

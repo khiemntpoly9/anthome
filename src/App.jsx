@@ -1,34 +1,25 @@
-import { React, Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { publicRoutes } from './routes/Router';
-import { DefaultLayout } from './layout/Layout';
 
-function App() {
+// Layout
+import DefaultLayout from './layout/DefaultLayout';
+// import AdmintLayout from '.layout/AdminLayout';
+
+// Page
+import Pagenotfound from './page/Pagenotfound';
+import Home from './page/home/Home';
+
+const App = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				{publicRoutes.map((route, index) => {
-					const Page = route.component;
-					let Layout = DefaultLayout;
-					if (route.layout) {
-						Layout = route.layout;
-					} else if (route.layout === null) {
-						Layout = Fragment;
-					}
-					return (
-						<Route
-							key={index}
-							path={route.path}
-							element={
-								<Layout>
-									<Page />
-								</Layout>
-							}
-						/>
-					);
-				})}
-			</Routes>
-		</BrowserRouter>
+		<Routes>
+			{/* Page */}
+			<Route path='/' element={<DefaultLayout />}>
+				<Route index element={<Home />} />
+				<Route path='/home' element={<Home />} />
+			</Route>
+			<Route path='*' element={<Pagenotfound />} />
+		</Routes>
 	);
-}
+};
+
 export default App;
