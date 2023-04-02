@@ -2,6 +2,27 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './header/Header';
 
+// Import CSS
+import './assets/css/bootstrap.min.css';
+import './assets/css/animate.css';
+import './assets/plugins/select2/css/select2.min.css';
+import './assets/css/dataTables.bootstrap4.min.css';
+import './assets/plugins/fontawesome/css/fontawesome.min.css';
+import './assets/plugins/fontawesome/css/all.min.css';
+import './assets/css/style.css';
+
+// Import Js
+import './assets/js/jquery-3.6.0.min.js';
+import './assets/js/feather.min.js';
+import './assets/js/jquery.slimscroll.min.js';
+import './assets/js/jquery.dataTables.min.js';
+import './assets/js/dataTables.bootstrap4.min.js';
+import './assets/js/bootstrap.bundle.min.js';
+import './assets/plugins/select2/js/select2.min.js';
+import './assets/plugins/sweetalert/sweetalert2.all.min.js';
+import './assets/plugins/sweetalert/sweetalerts.min.js';
+import './assets/js/script.js';
+
 // eslint-disable-next-line react/prop-types
 const DefaultLayout = () => {
 	return (

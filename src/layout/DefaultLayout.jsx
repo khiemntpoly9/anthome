@@ -4,6 +4,11 @@ import { Outlet } from 'react-router-dom';
 import Footer from './footer/Footer';
 import Header from './header/Header';
 
+// Import our custom CSS
+import '../scss/style.scss';
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap';
+
 // eslint-disable-next-line react/prop-types
 const DefaultLayout = () => {
 	return (
