@@ -6,7 +6,6 @@ import Header from './header/Header';
 const DefaultLayout = () => {
 	return (
 		<div className='container-fluid p-0'>
-			<Header />
 			<div>
 				<Outlet />
 			</div>
