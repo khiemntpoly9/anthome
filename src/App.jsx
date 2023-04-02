@@ -8,7 +8,7 @@ import AdminLayout from './layout/AdminLayout';
 // Page
 import Pagenotfound from './page/Pagenotfound';
 import Home from './page/home/Home';
-import Admin from './admin/Admin';
+import Admin from './page/admin/Admin';
 
 const App = () => {
 	return (

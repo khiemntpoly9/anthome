@@ -7,7 +7,7 @@ import img1 from '../../images/mega-1-image.webp';
 
 const Header = () => {
 	return (
-		<header className='header'>
+		<header className='header-a'>
 			<div className='container-lg'>
 				<div className='d-flex align-items-center justify-content-between evo-header-padding'>
 					{/* Menu icon */}
