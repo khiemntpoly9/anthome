@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
-		<div className='container-fluid footer d-flex flex-column justify-content-center mt-4'>
+		<footer className='container-fluid footer d-flex flex-column justify-content-center mt-4'>
 			<div className='container-lg d-flex flex-wrap gap-3 gap-md-0'>
 				<div className='col-12 col-md-6 col-lg-3'>
 					<h4 className='title-footer mb-2'>Liên hệ với Ant Home</h4>
@@ -111,7 +111,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 };
 

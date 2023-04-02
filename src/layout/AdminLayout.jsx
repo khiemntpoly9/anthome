@@ -1,6 +1,5 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './header/Header';
 
 // Import CSS
 import './assets/css/animate.css';
@@ -22,7 +21,7 @@ import './assets/plugins/sweetalert/sweetalerts.min.js';
 import './assets/js/script.js';
 
 // eslint-disable-next-line react/prop-types
-const DefaultLayout = () => {
+const AdminLayout = () => {
 	return (
 		<div className='container-fluid p-0'>
 			<div>
@@ -32,4 +31,4 @@ const DefaultLayout = () => {
 	);
 };
 
-export default DefaultLayout;
+export default AdminLayout;

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Layout
 import DefaultLayout from './layout/DefaultLayout';
-import AdmintLayout from './layout/AdminLayout';
+import AdminLayout from './layout/AdminLayout';
 
 // Page
 import Pagenotfound from './page/Pagenotfound';
@@ -18,7 +18,7 @@ const App = () => {
 				<Route index element={<Home />} />
 				<Route path='/home' element={<Home />} />
 			</Route>
-			<Route path='/admin' element={<AdmintLayout />}>
+			<Route path='/admin' element={<AdminLayout />}>
 				<Route index element={<Admin />} />
 			</Route>
 			<Route path='*' element={<Pagenotfound />} />
