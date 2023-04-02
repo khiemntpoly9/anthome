@@ -15,21 +15,21 @@ import settings from '../../../layout/assets/img/icons/settings.svg';
 
 const SiderBar = () => {
 	return (
-		<div class='sidebar' id='sidebar'>
-			<div class='sidebar-inner slimscroll'>
-				<div id='sidebar-menu' class='sidebar-menu'>
+		<div className='sidebar' id='sidebar'>
+			<div className='sidebar-inner slimscroll'>
+				<div id='sidebar-menu' className='sidebar-menu'>
 					<ul>
-						<li class='active'>
+						<li className='active'>
 							<a href='index.html'>
 								<img src={dashboard} alt='img' />
 								<span>Quản lý</span>
 							</a>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={product} alt='img' />
 								<span>Sản phẩm</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -58,11 +58,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={sales} alt='img' />
 								<span>Sales</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -82,11 +82,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={purchase1} alt='img' />
 								<span>Purchase</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -100,11 +100,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={expense1} alt='img' />
 								<span>Expense</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -118,11 +118,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={quotation1} alt='img' />
 								<span>Quotation</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -133,11 +133,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={transfer1} alt='img' />
 								<span>Transfer</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -151,11 +151,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={return1} alt='img' />
 								<span>Return</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -172,11 +172,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={users1} alt='img' />
 								<span>People</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -205,11 +205,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={places} alt='img' />
 								<span>Places</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -238,10 +238,10 @@ const SiderBar = () => {
 								<span> Blank Page</span>
 							</a>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<i data-feather='alert-octagon'></i>
-								<span> Error Pages </span> <span class='menu-arrow'></span>
+								<span> Error Pages </span> <span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -252,10 +252,10 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<i data-feather='box'></i> <span>Elements </span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -314,10 +314,10 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<i data-feather='bar-chart-2'></i> <span> Charts </span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -337,11 +337,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<i data-feather='award'></i>
 								<span> Icons </span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -376,10 +376,10 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<i data-feather='columns'></i> <span> Forms </span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -408,10 +408,10 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<i data-feather='layout'></i> <span> Table </span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -422,11 +422,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={product} alt='img' />
 								<span>Application</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -440,11 +440,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={time} alt='img' />
 								<span>Report</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -470,11 +470,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={users1} alt='img' />
 								<span>Users</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>
@@ -485,11 +485,11 @@ const SiderBar = () => {
 								</li>
 							</ul>
 						</li>
-						<li class='submenu'>
+						<li className='submenu'>
 							<a href='javascript:void(0);'>
 								<img src={settings} alt='img' />
 								<span>Settings</span>
-								<span class='menu-arrow'></span>
+								<span className='menu-arrow'></span>
 							</a>
 							<ul>
 								<li>

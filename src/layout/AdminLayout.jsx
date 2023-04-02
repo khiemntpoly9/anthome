@@ -20,11 +20,17 @@ import './assets/plugins/sweetalert/sweetalert2.all.min.js';
 import './assets/plugins/sweetalert/sweetalerts.min.js';
 import './assets/js/script.js';
 
+// Import component
+import NavBar from './admin/components/NavBar';
+import SiderBar from './admin/components/SiderBar';
+
 // eslint-disable-next-line react/prop-types
 const AdminLayout = () => {
 	return (
-		<div className='container-fluid p-0'>
-			<div>
+		<div className='main-wrapper'>
+			<NavBar />
+			<SiderBar />
+			<div className='page-wrapper'>
 				<Outlet />
 			</div>
 		</div>
