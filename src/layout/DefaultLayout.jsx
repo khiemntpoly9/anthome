@@ -1,17 +1,14 @@
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
-import { Outlet } from 'react-router-dom';
-import Footer from './footer/Footer';
-import Header from './header/Header';
 
-// eslint-disable-next-line react/prop-types
+import { Outlet } from 'react-router-dom';
+import Footer from '../components/blocks/footer/Footer';
+import Header from '../components/blocks/header/Header';
+
 const DefaultLayout = () => {
 	return (
 		<div>
 			<Header />
-			<article className='container-fluid p-0 m-0'>
-				<Outlet />
-			</article>
+			<Outlet />
 			<Footer />
 		</div>
 	);

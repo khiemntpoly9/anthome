@@ -1,62 +1,72 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import dashboard from '../../../layout/assets/img/icons/dashboard.svg';
-import product from '../../../layout/assets/img/icons/product.svg';
-import sales from '../../../layout/assets/img/icons/sales1.svg';
-import purchase1 from '../../../layout/assets/img/icons/purchase1.svg';
-import expense1 from '../../../layout/assets/img/icons/expense1.svg';
-import quotation1 from '../../../layout/assets/img/icons/quotation1.svg';
-import transfer1 from '../../../layout/assets/img/icons/transfer1.svg';
-import return1 from '../../../layout/assets/img/icons/return1.svg';
-import users1 from '../../../layout/assets/img/icons/users1.svg';
-import places from '../../../layout/assets/img/icons/places.svg';
-import time from '../../../layout/assets/img/icons/time.svg';
-import settings from '../../../layout/assets/img/icons/settings.svg';
+import dashboard from '../assets/img/icons/dashboard.svg';
+import product from '../assets/img/icons/product.svg';
+import sales from '../assets/img/icons/sales1.svg';
+import purchase1 from '../assets/img/icons/purchase1.svg';
+import expense1 from '../assets/img/icons/expense1.svg';
+import quotation1 from '../assets/img/icons/quotation1.svg';
+import transfer1 from '../assets/img/icons/transfer1.svg';
+import return1 from '../assets/img/icons/return1.svg';
+import users1 from '../assets/img/icons/users1.svg';
+import places from '../assets/img/icons/places.svg';
+import time from '../assets/img/icons/time.svg';
+import settings from '../assets/img/icons/settings.svg';
 
 const SiderBar = () => {
 	return (
 		<div className='sidebar' id='sidebar'>
-			<div className='sidebar-inner slimscroll'>
+			<div className='sidebar-inner slimscroll w-100'>
 				<div id='sidebar-menu' className='sidebar-menu'>
-					<ul>
+					<ul className='p-0'>
 						<li className='active'>
-							<a href='index.html'>
+							<Link to='/admin'>
 								<img src={dashboard} alt='img' />
 								<span>Quản lý</span>
-							</a>
+							</Link>
 						</li>
 						<li className='submenu'>
-							<a href='javascript:void(0);'>
+							<a
+								data-bs-toggle='collapse'
+								href='#collapseProduct'
+								role='button'
+								aria-expanded='false'
+								aria-controls='collapseExample'
+							>
 								<img src={product} alt='img' />
 								<span>Sản phẩm</span>
 								<span className='menu-arrow'></span>
 							</a>
-							<ul>
-								<li>
-									<a href='productlist.html'>Danh sách sản phẩm</a>
-								</li>
-								<li>
-									<a href='addproduct.html'>Thêm sản phẩm</a>
-								</li>
-								<li>
-									<a href='categorylist.html'>Danh sách danh mục</a>
-								</li>
-								<li>
-									<a href='addcategory.html'>Thêm danh mục</a>
-								</li>
-								<li>
-									<a href='subcategorylist.html'>Danh mục con</a>
-								</li>
-								<li>
-									<a href='subaddcategory.html'>Thêm danh mục con</a>
-								</li>
-								<li>
-									<a href='brandlist.html'>Danh sách hãng</a>
-								</li>
-								<li>
-									<a href='addbrand.html'>Thêm hãng</a>
-								</li>
-							</ul>
+							<div className='collapse mt-2' id='collapseProduct'>
+								<div className='card card-body'>
+									<li>
+										<Link to='/admin/listproduct'>Danh sách sản phẩm</Link>
+									</li>
+									<li>
+										<Link to='/admin/add-product'>Thêm sản phẩm</Link>
+									</li>
+									<li>
+										<a href='categorylist.html'>Danh sách danh mục</a>
+									</li>
+									<li>
+										<a href='addcategory.html'>Thêm danh mục</a>
+									</li>
+									<li>
+										<a href='subcategorylist.html'>Danh mục con</a>
+									</li>
+									<li>
+										<a href='subaddcategory.html'>Thêm danh mục con</a>
+									</li>
+									<li>
+										<a href='brandlist.html'>Danh sách hãng</a>
+									</li>
+									<li>
+										<a href='addbrand.html'>Thêm hãng</a>
+									</li>
+								</div>
+							</div>
 						</li>
 						<li className='submenu'>
 							<a href='javascript:void(0);'>

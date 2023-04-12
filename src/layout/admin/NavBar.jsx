@@ -1,18 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // Images
-import logo from '../../../layout/assets/img/logo.png';
-import logo_small from '../../../layout/assets/img/logo-small.png';
-import closes from '../../../layout/assets/img/icons/closes.svg';
-import search from '../../../layout/assets/img/icons/search.svg';
+import logo from '../assets/img/logo.png';
+import logo_small from '../assets/img/logo-small.png';
+import closes from '../assets/img/icons/closes.svg';
+import search from '../assets/img/icons/search.svg';
 //
-import notification from '../../../layout/assets/img/icons/notification-bing.svg';
+import notification from '../assets/img/icons/notification-bing.svg';
 //
-import avatar from '../../../layout/assets/img/profiles/avt.png';
-import logout from '../../../layout/assets/img/icons/log-out.svg';
+import avatar from '../assets/img/profiles/avt.png';
+import logout from '../assets/img/icons/log-out.svg';
+
+import newRequest from '../../utils/newRequest';
 
 const NavBar = () => {
+	const navigate = useNavigate();
+	const logOutAd = () => {
+		newRequest.post('/logout');
+		navigate('/home');
+	};
+
 	return (
 		<div className='header'>
 			<div className='header-left active'>
@@ -128,10 +136,10 @@ const NavBar = () => {
 								<i className='me-2' data-feather='settings'></i> Cài đặt
 							</a>
 							<hr className='m-0' />
-							<a className='dropdown-item logout pb-0' href='signin.html'>
+							<span className='dropdown-item logout pb-0' onClick={logOutAd}>
 								<img src={logout} className='me-2' alt='img' />
 								Đăng xuất
-							</a>
+							</span>
 						</div>
 					</div>
 				</li>
